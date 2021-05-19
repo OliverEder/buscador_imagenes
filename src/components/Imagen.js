@@ -1,4 +1,5 @@
 import React from 'react';
+import propTypes from 'prop-types';
 
 const Imagen = ({imagen}) => {
     const {largeImageURL, likes, previewURL, tags, views} = imagen
@@ -23,5 +24,9 @@ const Imagen = ({imagen}) => {
         </div>
     );
 }
- 
+
+Imagen.protoTypes = {
+    imagen : propTypes.object.isRequired
+}
+
 export default Imagen;
